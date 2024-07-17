@@ -5,7 +5,7 @@
 # Created:
 #   17 Jul 2024, 20:50:55
 # Last edited:
-#   17 Jul 2024, 22:40:02
+#   17 Jul 2024, 22:41:43
 # Auto updated?
 #   Yes
 #
@@ -114,7 +114,7 @@ fi
 if [[ ! -d "$target_dir" ]]; then
     run_cmd mkdir -p "$target_dir" || exit "$?"
 fi
-pushd "$target_dir"
+cd "$target_dir"
 
 # Pull the repository
 if [[ ! -d "$target_dir/static-website-host" ]]; then
@@ -122,7 +122,7 @@ if [[ ! -d "$target_dir/static-website-host" ]]; then
 fi
 
 # Go into it
-pushd ./static-website-host
+cd ./static-website-host
 # Build natively if we haven't already
 if [[ "$use_docker" -eq 0 && ! -f "./target/release/static-website-host" ]]; then
     run_cmd cargo build --release
@@ -147,5 +147,3 @@ else
 fi
 
 # Done
-popd
-popd
