@@ -4,16 +4,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/common.css" />
     <link rel="stylesheet" href="assets/sr.css" />
-    <!-- <script src="assets/code.js"></script> -->
+    <script src="assets/sr-code.js"></script>
     <title>SIMULATORRADIO</title>
 </head>
 <body>
+    <script>0</script>
     <div id="header">
         <div id="title">
-            <img id="title-icon" src="https://www.iconarchive.com/download/i103428/paomedia/small-n-flat/headphone.ico" width="80px" />
-            <img id="title-logo" src="https://simulatorradio.com/img/srnormal.svg" width="400px"/>
+            <img id="title-icon" src="https://www.iconarchive.com/download/i103428/paomedia/small-n-flat/headphone.ico" width="80px" onclick="window.location.href = '/'" />
+            <img id="title-logo" onclick="window.location.href='https://simulatorradio.com'" src="https://simulatorradio.com/img/srnormal.svg" width="400px"/>
         </div>
     </div>
     <div id="body">
+        <div id = "player">
+            <div id = "player-inner">
+                <img id="player-art" src="https://miro.medium.com/v2/resize:fit:882/1*9EBHIOzhE1XfMYoKz1JcsQ.gif" />
+                <div id="player-art-click" onclick="play_sr();"><i class="fa-solid fa-play"></i></div>
+                <div id="player-info">
+                    <span id="player-title">-</span>
+                    <span id="player-artist">-</span>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
