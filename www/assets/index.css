@@ -1,0 +1,50 @@
+#radios {
+    width: 100%;
+}
+
+#simulatorradio {
+    background: url("https://simulatorradio.com/img/new-ring.png") no-repeat top -30px left -20px,#131313;
+    background-size: 80px;
+    background-color: #212529;
+    border-radius: 10px;
+    height: 100px;
+    width: calc(100% - 60px);
+    margin: 30px;
+    padding: 0px;
+}
+#simulatorradio:hover {
+    cursor: pointer;
+}
+#simulatorradio-logo {
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 75px;
+    width: 100%;
+    max-width: 400px;
+}
+#simulatorradio-button {
+    display: block;
+    position: relative;
+    top: -5px;
+    left: calc(100% - 225px);
+    width: 150px;
+    font-size: 24px;
+    height: 50px;
+    border-style: solid;
+    background-color: #212529;
+    color: #e24208;
+    border-color: #e24208;
+    border-radius: 10px;
+    border-width: 3px;
+    font-weight: bold;
+    font-family: 'Cascadia Code', sans-serif;
+    transition: color 0.3s ease-out;
+    transition: background-color 0.3s ease-out;
+}
+#simulatorradio-button:hover {
+    background-color: #e24208;
+    color: #212529;
+    cursor: pointer;
+}
