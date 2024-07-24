@@ -4,7 +4,7 @@
  * Created:
  *   24 Jul 2024, 05:46:54
  * Last edited:
- *   24 Jul 2024, 06:01:50
+ *   24 Jul 2024, 06:04:25
  * Auto updated?
  *   Yes
  *
@@ -184,7 +184,8 @@ function play_sr() {
         audio = new Audio("https://simulatorradio.stream/stream.mp3");
         audio.play();
         document.getElementById("player-art-click").innerHTML = '<i class="fa-solid fa-pause"></i>';
-        document.getElementById("player-status").innerText = 'Playing';
+        document.getElementById("player-status").innerText = 'Playing...';
+        document.getElementById("player-status").style.fontWeight = 'bold';
         document.getElementById("player-status").style.fontStyle = 'normal';
         console.log("Playing SIMULATORRADIO");
     } else {
@@ -192,6 +193,7 @@ function play_sr() {
         audio = null;
         document.getElementById("player-art-click").innerHTML = '<i class="fa-solid fa-play"></i>';
         document.getElementById("player-status").innerText = 'Paused';
+        document.getElementById("player-status").style.fontWeight = 'normal';
         document.getElementById("player-status").style.fontStyle = 'italic';
         console.log("Pausing SIMULATORRADIO");
     }
