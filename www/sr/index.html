@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/common.css" />
     <link rel="stylesheet" href="assets/sr.css" />
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
     <script src="assets/sr-code.js"></script>
     <title>SIMULATORRADIO</title>
 </head>
@@ -23,6 +24,14 @@
                 <div id="player-info">
                     <span id="player-title">-</span>
                     <span id="player-artist">-</span>
+                </div>
+                <div id="player-bottom">
+                    <div id="player-status">Paused</div>
+                    <div style="font-size: 12px;"><br></div>
+                    <div id="player-notifs">
+                        <input id="player-notifs-check" type="checkbox" />
+                        <label id="player-notifs-label">Ontvang notificaties over wat er speelt</label>
+                    </div>
                 </div>
             </div>
         </div>
